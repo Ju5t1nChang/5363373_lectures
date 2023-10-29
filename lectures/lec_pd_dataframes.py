@@ -136,7 +136,7 @@ sorted_ser  = new_ser.sort_index()
 
 # `sorted_ser` is sorted so the following will return the intersection between
 # the slice and the row labels
-#x = sorted_ser['b':'z'] 
+x = sorted_ser['b':'z']
 #print(x) 
 # Out:
 # b    2
@@ -148,7 +148,7 @@ ser_sort_inplace  = pd.Series(data=[1,3,2], index=['a','b','c'])
 
 # Sort the series. Note that we are not assigning this function call
 # to a new variable.
-#ser_sort_inplace.sort_index(inplace=True)
+ser_sort_inplace.sort_index(inplace=True)
 #print(ser_sort_inplace)
 
 
