@@ -63,8 +63,8 @@ bday_ser = pd.Series(data=bday, index=dates)
 #   Create a dataframe
 # ---------------------------------------------------------------------------- 
 # Data Frame with close and Bday columns
-df  = '?'
-#print(df) 
+df  = pd.DataFrame({'Close' : prc_ser, 'Bday' : bday_ser})
+#print(df)
 
 
 # ---------------------------------------------------------------------------- 
@@ -91,9 +91,9 @@ df  = '?'
 #   Modifying columns and indexes
 # ----------------------------------------------------------------------------
 # Modify columns and indexes
-#df.columns = ['A', 'B']     
-#df.index = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
-#print(df) 
+#df.columns = ['A', 'B']
+#df.index = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#print(df)
 
 # Then revert back
 #df.columns = ['Close', 'Bday'] 
