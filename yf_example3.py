@@ -14,3 +14,7 @@ def qan_prc_to_csv(YYYY):
     start = f'{year}-01-01'
     end = f'{year+1}-01-01'
     yf_example2.yf_prc_to_csv(tic, pth, start=start, end=end)
+
+if __name__ == "__main__":
+    year = 2020
+    qan_prc_to_csv(year)

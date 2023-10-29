@@ -123,12 +123,12 @@ new_ser = pd.Series(data=[1,3,2], index=['a', 'c', 'b'])
 #print(new_ser.is_monotonic_increasing) 
 
 # Sort the series based on the index
-sorted_ser  = '?'
-#print(sorted_ser) 
+sorted_ser  = new_ser.sort_index()
+#print(sorted_ser)
 
 # This will return only the first rows (not the entire series as before)
-#x = sorted_ser['a':'b'] # --> only first two rows 
-#print(x) 
+#x = sorted_ser['a':'b'] # --> only first two rows
+#print(x)
 # Out:
 # a    1
 # b    2
@@ -144,11 +144,11 @@ sorted_ser  = '?'
 # dtype: int64
 
 # Create a series with an unsorted index 
-ser_sort_inplace  = '?'
+ser_sort_inplace  = pd.Series(data=[1,3,2], index=['a','b','c'])
 
 # Sort the series. Note that we are not assigning this function call
 # to a new variable.
-#ser_sort_inplace.sort_index(inplace=True) 
-#print(ser_sort_inplace) 
+#ser_sort_inplace.sort_index(inplace=True)
+#print(ser_sort_inplace)
 
 

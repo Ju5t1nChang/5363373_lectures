@@ -43,7 +43,7 @@ print(f"First 20 characters in cnts_copy: '{cnts_copy[:20]}'")
 fobj.close()
 
 
-"""In-Class Exercise"""
+"""In-Class Exercise 1"""
 def freqword(filepath):
     with open(filepath) as file:
         counts = dict()
@@ -75,7 +75,7 @@ ind = pd.Index()
 #Pandas Dataframe
 df = pd.DataFrame()
 
-"""In-Class Exercise"""
+"""In-Class Exercise 2"""
 columns = ['a','b']
 index = ['c','d','e']
 a_data = [1,2,3]

@@ -2,8 +2,10 @@
 
 Project configuration file
 """
+
 import os
 
 
-PRJDIR = 'C:\\Users\\Justin Chang\\PycharmProjects\\toolkit'
-datadir = 'C:\\Users\\Justin Chang\\PycharmProjects\\toolkit'
+PRJDIR = r'C:\Users\Justin Chang\PycharmProjects\toolkit'
+DATADIR = os.path.join(PRJDIR, 'data')
+datadir = PRJDIR
